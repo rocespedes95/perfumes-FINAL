@@ -1,3 +1,39 @@
+.titulo {
+  margin-top: 20px; }
+  .titulo a {
+    text-decoration: none;
+    text-align: center; }
+    .titulo a h1 {
+      font-size: 80px;
+      font-family: 'Times New Roman', Times, serif; }
+
+.bodyIndex {
+  background-image: url(/imagenes/fonditoindex.jpg); }
+
+.naveGador {
+  background-color: #000000; }
+
+.carruMen {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.carritoMen {
+  display: flex;
+  justify-content: center; }
+
+.carritoHombreindex {
+  width: 400px;
+  height: 600px; }
+
+.videoHombres {
+  display: flex;
+  justify-content: center;
+  gap: 15px; }
+
+.comercialHombre {
+  width: 600px;
+  height: 400px; }
+
 .mainProductos {
   display: flex;
   flex-wrap: wrap;

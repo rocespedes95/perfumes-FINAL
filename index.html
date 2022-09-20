@@ -12,12 +12,12 @@
       crossorigin="anonymous"
     />
     <!-- Css Propio -->
-    <link rel="stylesheet" href="/css/estilo.css" />
+    <link rel="stylesheet" href="../css/estilo.css" />
 
     <title>Fragance Store</title>
   </head>
   <body class="container-fluid bodyIndex">
-    <div>
+    <div class="titulo">
       <a href="/index.html">
         <h1>Fragance Store</h1>
       </a>
@@ -99,7 +99,7 @@
     <main>
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        class="carousel slide carruMen"
         data-bs-ride="true"
       >
         <div class="carousel-indicators">
@@ -124,9 +124,9 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner carritoMen">
           <div class="carousel-item active">
-            <div class="card carruselMen" style="width: 18rem">
+            <div class="card carritoHombreindex">
               <img
                 src="/imagenes/mens/Fragancia Boucheron Quatre Men.jpg"
                 class="card-img-top"
@@ -153,7 +153,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card carruselMen" style="width: 18rem">
+            <div class="card carritoHombreindex">
               <img
                 src="/imagenes/mens/Fragancia Paco Rabanne 1 Million Men.jpg"
                 class="card-img-top"
@@ -180,7 +180,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card carruselMen" style="width: 18rem">
+            <div class="card carritoHombreindex">
               <img
                 src="/imagenes/mens/Le Beau Jean Paul Gaultier.jpg"
                 class="card-img-top"
@@ -226,10 +226,9 @@
         </button>
       </div>
     </main>
-    <section>
+    <section class="videoHombres">
       <iframe
-        width="560"
-        height="315"
+        class="comercialHombre"
         src="https://www.youtube.com/embed/YKKSWzgqtdk"
         title="YouTube video player"
         frameborder="0"
@@ -238,8 +237,7 @@
       ></iframe>
 
       <iframe
-        width="560"
-        height="315"
+        class="comercialHombre"
         src="https://www.youtube.com/embed/COzVP0yQss8"
         title="YouTube video player"
         frameborder="0"
@@ -247,8 +245,7 @@
         allowfullscreen
       ></iframe>
       <iframe
-        width="560"
-        height="315"
+        class="comercialHombre"
         src="https://www.youtube.com/embed/OLFoORB1H4I"
         title="YouTube video player"
         frameborder="0"
@@ -256,16 +253,15 @@
         allowfullscreen
       ></iframe>
     </section>
-
     <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="true"
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide carruWomen"
+      data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleDark"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -273,47 +269,20 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleDark"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleDark"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card perfWomen" style="width: 18rem">
-            <img
-              src="/imagenes/women/Fragancia Dolce&Gabbana Dolce Garden.jpg"
-              class="card-img-top"
-              alt="Fragancia Dolce&Gabbana Dolce Garden"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Fragancia Dolce&Gabbana Dolce Garden</h4>
-              <p class="card-text">
-                Es una fragancia de la familia olfativa Floral Frutal Gourmand
-                para Mujeres.Las Notas de Salida son magnolia, mandarina y
-                neroli; las Notas de Corazón son coco, frangipani (plumeria,
-                plumaria, atapaima) y ylang-ylang; las Notas de Fondo son
-                absoluto de vainilla, leche de almendras y sándalo.
-              </p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">29.000 $</li>
-            </ul>
-            <div class="card-body botonWomen">
-              <button type="button" class="btn btn-primary">
-                Agregar al Carrito
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card perfWomen" style="width: 18rem">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="card carritoMujerindex" style="width: 18rem">
             <img
               src="/imagenes/women/Fragancia Mugler Alien.jpg"
               class="card-img-top"
@@ -338,8 +307,38 @@
             </div>
           </div>
         </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="card carritoMujerindex" style="width: 18rem">
+            <img
+              src="/imagenes/women/Fragancia Mugler Angel.jpg"
+              class="card-img-top"
+              alt="Fragancia Mugler Angel"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Fragancia Mugler Angel</h4>
+              <p class="card-text">
+                Es una fragancia de la familia olfativa Ámbar Vainilla para
+                Mujeres. Las Notas de Salida son algodón de azúcar, coco, casis
+                (grosellero negro), melón, jazmín, bergamota, piña y mandarina;
+                las Notas de Corazón son miel, bayas rojas, zarzamora (frambuesa
+                negra), ciruela, chabacano, durazno (melocotón), jazmín,
+                orquídea, alcaravea, nuez moscada, rosa y lirio de los valles
+                (muguete); las Notas de Fondo son pachulí, chocolate, caramelo,
+                vainilla, haba tonka, ámbar, almizcle y sándalo.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">26.000 $</li>
+            </ul>
+            <div class="card-body botonWomen">
+              <button type="button" class="btn btn-primary">
+                Agregar al Carrito
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="carousel-item">
-          <div class="card perfWomen" style="width: 18rem">
+          <div class="card carritoMujerindex" style="width: 18rem">
             <img
               src="/imagenes/women/Gabrielle Chanel.jpg"
               class="card-img-top"
@@ -370,7 +369,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselExampleDark"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -379,13 +378,14 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselExampleDark"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
     <section>
       <iframe
         width="560"
@@ -408,7 +408,7 @@
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/ojbVsG93CbY"
+        src="https://www.youtube.com/embed/gE_-mx9kwps"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
