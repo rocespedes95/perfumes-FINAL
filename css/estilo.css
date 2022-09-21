@@ -13,28 +13,18 @@
 .naveGador {
   background-color: #000000; }
 
-.carruMen {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.carritoMen {
-  display: flex;
-  justify-content: center; }
-
-.carritoHombreindex {
-  width: 400px;
-  height: 600px; }
-
-.videoHombres {
-  display: flex;
-  justify-content: center;
-  gap: 15px; }
-
-.comercialHombre {
-  width: 600px;
-  height: 400px; }
+.mainIndex {
+  gap: 10px;
+  margin-top: 30px;
+  height: 300px;
+  width: 300px; }
 
 .mainProductos {
   display: flex;
   flex-wrap: wrap;
   gap: 15px; }
+
+.pieSito {
+  margin-bottom: auto; }
+  .pieSito a {
+    color: #000000; }
