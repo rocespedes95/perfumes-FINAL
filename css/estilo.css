@@ -11,20 +11,17 @@
   background-image: url(/imagenes/fonditoindex.jpg); }
 
 .naveGador {
-  background-color: #000000; }
+  background-color: #457b9d;
+  border-radius: 15px; }
 
 .mainIndex {
-  gap: 10px;
-  margin-top: 30px;
-  height: 300px;
-  width: 300px; }
+  margin-top: 30px; }
+
+.botonKids {
+  display: flex;
+  justify-content: center; }
 
 .mainProductos {
   display: flex;
   flex-wrap: wrap;
   gap: 15px; }
-
-.pieSito {
-  margin-bottom: auto; }
-  .pieSito a {
-    color: #000000; }
